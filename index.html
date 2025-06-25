@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU+Guides&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/estilo.css">
+    <title>Minhas Extras</title>
+</head>
+<body>
+    <div class="container-out">
+    <form class="form-group">
+        <div class="container">
+            <h1 class="titulo">MinhasExtras<img src="/assets/img/saco-de-dolar.svg" alt=""></h1>
+            <div class="container-topo">
+                <div class="container-inputs">
+                    <p><label for="inSalario">Seu Sálario Bruto </label><i class="fi fi-tr-sack-dollar"></i>
+                        <img src="/assets/img/circulo-usd.svg">
+                        <input type="text"  id="inSalario" placeholder="0,00">
+                        
+                    </p>
+                    <p><label for="inExtraCem">Qtde Extras 100%</label>
+                        <img src="/assets/img/relogio-tres.svg">
+                        <input type="number" id="inExtraCem" placeholder="Horas:">
+                        
+                    </p>
+                    <p><label for="inExtraCinq">Qtde Extras 50%</label>
+                        <img src="/assets/img/relogio-tres.svg">
+                        <input type="number" id="inExtraCinq" placeholder="Horas: ">
+                        
+                    </p>
+                    <p><button type="submit" class="btn  btn-success btn-custom-size">Calcular Extras <span id="checkFig"><b>&#10003;</b></span></button></p>
+                </div>
+            </div>
+
+           
+
+            <pre id="outRespAdianta"></pre>
+
+            <pre id="outResp100"></pre>
+
+            <pre id="outResp50"></pre>
+
+            <pre id="outRespDesc"></pre>
+
+            <pre id="outRespSalario"></pre>
+            
+        </div>
+    </form>
+    </div>
+</body>
+    <script src="/assets/js/script.js"></script>
+</html>

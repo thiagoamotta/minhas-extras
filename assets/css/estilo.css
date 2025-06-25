@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(120deg, #86da9f 0%, #8ff494 100%);
+    font-family: sans-serif;
+}
+
+.form-custom-size{
+    width: 100%;
+    height: 100%;
+}
+.container-out{
+    width: 100vw;
+    height: 100vh;
+}
+img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+#checkFig{
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    padding-top: 5%;
+}
+.container-topo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 41vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+input{
+    border:none;
+    background-color: rgb(223, 250, 215);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+}
+label{
+    width: 100%;
+}
+.btn-custom-size {
+    width: 100%;
+    font-size: 18px;
+}
+#outRespSalario, #outResp100, #outResp50, #outRespAdianta, #outRespDesc{
+    background-color: rgb(223, 250, 215);
+    height: 55px;
+    width: 90vw;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
