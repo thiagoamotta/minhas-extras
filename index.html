@@ -7,29 +7,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU+Guides&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/minhas-extras/assets/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/estilo.css">
     <title>Minhas Extras</title>
 </head>
 <body>
     <div class="container-out">
-    <form class="form-group">
+    <form class="form-group form-custom-size">
         <div class="container">
-            <h1 class="titulo">MinhasExtras<img src="/minhas-extras/assets/img/saco-de-dolar.svg" alt=""></h1>
             <div class="container-topo">
                 <div class="container-inputs">
+                    <h1 class="titulo">Minhas Extras<img src="/assets/img/saco-de-dolar.svg" alt=""></h1>
                     <p><label for="inSalario">Seu Sálario Bruto </label><i class="fi fi-tr-sack-dollar"></i>
-                        <img src="/minhas-extras/assets/img/circulo-usd.svg">
-                        <input type="text"  id="inSalario" placeholder="0,00">
+                        <img src="/assets/img/circulo-usd.svg">
+                        <input type="text"  id="inSalario"  placeholder="0,00">
                         
                     </p>
                     <p><label for="inExtraCem">Qtde Extras 100%</label>
-                        <img src="/minhas-extras/assets/img/relogio-tres.svg">
-                        <input type="number" id="inExtraCem" placeholder="Horas:">
+                        <img src="/assets/img/relogio-tres.svg">
+                        <input type="time" id="inExtraCem">
                         
                     </p>
                     <p><label for="inExtraCinq">Qtde Extras 50%</label>
-                        <img src="/minhas-extras/assets/img/relogio-tres.svg">
-                        <input type="number" id="inExtraCinq" placeholder="Horas: ">
+                        <img src="/assets/img/relogio-tres.svg">
+                        <input type="time" id="inExtraCinq">
+                        
+                    </p>
+                     <p><label for="inDescontos">Descontos Fixos</label>
+                        <img src="/assets/img/circulo-usd.svg">
+                        <input type="text" id="inDescontos" placeholder="0,00">
                         
                     </p>
                     <p><button type="submit" class="btn  btn-success btn-custom-size">Calcular Extras <span id="checkFig"><b>&#10003;</b></span></button></p>
@@ -46,11 +51,15 @@
 
             <pre id="outRespDesc"></pre>
 
+            <pre id="outRespImposto"></pre>
+
+            <pre id="outRespDesc2"></pre>
+
             <pre id="outRespSalario"></pre>
             
         </div>
     </form>
     </div>
 </body>
-    <script src="/minhas-extras/assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </html>
