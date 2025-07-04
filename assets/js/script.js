@@ -159,7 +159,7 @@ const pagamentoDia30 = (salarioInteiro, adiantamento, extras100, extra50, inss, 
 
             const total = salario + extras100 + extra50 - inss - irrf - fixos
 
-            respFinal.innerText = `Pagamento dia 30: R$${total.toFixed(2)} \n60% do seu salário + Extras - Descontos)`
+            respFinal.innerText = `Pagamento dia 30: R$${total.toFixed(2)} \n(60% do seu salário + Extras - Descontos)`
 
             return total
 }
