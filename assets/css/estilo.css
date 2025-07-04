@@ -82,4 +82,5 @@ label{
     display: flex;
     align-items: center;
     padding-left: 10px;
+    overflow: auto;
 }
