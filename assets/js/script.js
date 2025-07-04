@@ -102,7 +102,7 @@ const descIrrf = (salarioInteiro, extras100, extras50, inss) =>{
 const calcAdiantamento = () =>{
     const salario = salarioInt()
     const adiantamento = salario - (salario * 0.6)
-    respAdianta.innerText = `Adiantamento dia 15: R$${adiantamento.toFixed(2)} \n (40% do seu salário bruto)`
+    respAdianta.innerText = `Adiantamento dia 15: R$${adiantamento.toFixed(2)} \n(40% do seu salário bruto)`
     return adiantamento
 }
 
@@ -159,7 +159,7 @@ const pagamentoDia30 = (salarioInteiro, adiantamento, extras100, extra50, inss, 
 
             const total = salario + extras100 + extra50 - inss - irrf - fixos
 
-            respFinal.innerText = `Pagamento dia 30: R$ ${total.toFixed(2)} (60% do seu salário + Extras + Descontos)`
+            respFinal.innerText = `Pagamento dia 30: R$${total.toFixed(2)} \n60% do seu salário + Extras - Descontos)`
 
             return total
 }
@@ -185,41 +185,6 @@ frm.addEventListener('submit', e =>{
         
 }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
