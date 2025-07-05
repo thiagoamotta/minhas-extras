@@ -182,6 +182,10 @@ frm.addEventListener('submit', e =>{
         calcAdiantamento()
         descontosFixos()
         pagamentoDia30(salarioInteiro, calcAdiantamento(), extras100, extras50, inss, irrf, descontosFixos())
+        alert('Lembrando! os valores apresentados\n'
+            +'são apenas uma referência!\nPara um cálculo preciso seriam\n'
+            +'necessários as informações\n'
+            +'como: Horas, Minutos e Descontos...')
         
 }
 })
