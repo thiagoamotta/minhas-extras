@@ -25,7 +25,7 @@ const calcHoras = () =>{
     const salario = salarioInt()
     const horasMes = 199
     const valorHoraTrabalhada = salario/horasMes
-    return valorHoraTrabalhada
+    return valorHoraTrabalhada/60
     
 }
 
@@ -109,34 +109,24 @@ const calcAdiantamento = () =>{
 
 const horasExtrasCem = () =>{
 
-    const timeValue = frm.inExtraCem.value // Ex: "14:30"
+    const horaCem = Number(frm.inHoraCem.value)
+    const minCem = Number(frm.inMinCem.value)
 
-    if(!timeValue){
-        return 0
-    }
-        // Divide a string "HH:MM" em horas e minutos
-        const partesDoTempo = timeValue.split(':');
-        const horas = parseInt(partesDoTempo[0], 10); 
-        const minutos = parseInt(partesDoTempo[1], 10); 
-        // Calcula o total de minutos
-        const totalMinutos = ((horas * 60) + minutos)*2;
-        return totalMinutos/60
+    const total = (horaCem*60)+minCem
+    console.log(total)
+    return total*2
+
 
 }
 
 const horasExtrasCinq = () =>{
 
-    const timeValue = frm.inExtraCinq.value 
-    if(!timeValue){
-        return 0
-    }
-        // Divide a string "HH:MM" em horas e minutos
-        const partesDoTempo = timeValue.split(':');
-        const horas = parseInt(partesDoTempo[0], 10); 
-        const minutos = parseInt(partesDoTempo[1], 10); 
-        // Calcula o total de minutos
-        const totalMinutos = ((horas * 60) + minutos)*1.5;
-        return totalMinutos/60
+    const horaCinq = Number(frm.inHoraCinq.value)
+    const minCinq = Number(frm.inMinCinq.value)
+
+    const totalMin = (horaCinq*60)+minCinq
+    const total = totalMin + (totalMin * 0.5)
+    return total
 
 }
 
@@ -159,7 +149,7 @@ const pagamentoDia30 = (salarioInteiro, adiantamento, extras100, extra50, inss, 
 
             const total = salario + extras100 + extra50 - inss - irrf - fixos
 
-            respFinal.innerText = `Pagamento dia 30: R$${total.toFixed(2)} \n(60% do seu salário + Extras - Descontos)`
+            respFinal.innerText = `Pagamento dia 30: R$${total.toFixed(2)} \n60% do seu salário + Extras - Descontos)`
 
             return total
 }
@@ -186,7 +176,6 @@ frm.addEventListener('submit', e =>{
             +'são apenas uma referência!\nPara um cálculo preciso seriam\n'
             +'necessários as informações\n'
             +'como: Horas, Minutos e Descontos...')
-        
 }
 })
 
